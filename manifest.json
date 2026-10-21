@@ -1,0 +1,9 @@
+{
+  "name": "debug",
+  "display_name": "Debug Menu",
+  "version": "0.1.0",
+  "description": "Debug tool for testing overlay rendering, keyboard and mouse input capture, and input blocking",
+  "homepage": null,
+  "dependencies": [],
+  "min_starfish_version": null
+}
