@@ -1,14 +1,14 @@
 plugin = {
     name = "debug",
     displayName = "Debug Menu",
-    prefix = "§7[Debug]",
-    version = "0.1.0",
+    prefix = "§7DB",
+    version = "0.1.1",
     description = "Debug tool for testing overlay rendering, keyboard and mouse input capture, and input blocking",
 }
 
 -- Constants
 
-local TITLE_SIZE, BODY_SIZE, SMALL_SIZE = 20, 14, 11
+local TITLE_SIZE, BODY_SIZE, SMALL_SIZE = 24, 16, 8
 
 local PANEL_W = 380
 local PAD = 24
@@ -281,9 +281,9 @@ end
 local function drawClosedHint()
     local message = "Press M for the debug menu"
     local width = starfish.overlay.measureText(message, BODY_SIZE)
-    starfish.overlay.rect({ anchor = TOP_LEFT, x = 8, y = 8, w = width + 23, h = 28, color = COLOR.panel })
-    starfish.overlay.rect({ anchor = TOP_LEFT, x = 8, y = 8, w = 3, h = 28, color = COLOR.accent })
-    starfish.overlay.text({ anchor = TOP_LEFT, x = 21, y = 15, text = message, size = BODY_SIZE, color = COLOR.text, shadow = true })
+    starfish.overlay.rect({ anchor = TOP_LEFT, x = 8, y = 8, w = width + 27, h = 32, color = COLOR.panel })
+    starfish.overlay.rect({ anchor = TOP_LEFT, x = 8, y = 8, w = 3, h = 32, color = COLOR.accent })
+    starfish.overlay.text({ anchor = TOP_LEFT, x = 23, y = 16, text = message, size = BODY_SIZE, color = COLOR.text, shadow = true })
 end
 
 local function draw()
